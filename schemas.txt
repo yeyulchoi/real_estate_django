@@ -1,0 +1,48 @@
+### LISTING
+-id INT
+-realtor -name/image   (FOREIGN KEY[REALTOR])
+- Title STR
+-Address STR, 
+- city STR, 
+-state STR, 
+-zip STR
+-description : TEXT
+-price:INT
+-bedrooms: INT
+-bathrooms: INT
+-garage: INT [0]
+-sqft: INT
+-lot_size: FLOAT
+is_published:BOOL [by default: True]
+-list_date:DATE
+-photo_main: STR
+-photo_1:STR
+-photo_2:STR
+-photo_3:STR
+-photo_4:STR
+-photo_5:STR
+-photo_6:STR
+
+
+
+### REALTOR
+-id INT
+- name STR
+-photo:STR
+-description : TEXT
+-email: STR
+-phone:STR
+- contact info
+-is_MVP: BOOL[0]
+-hire_date: DATE
+
+
+###CONTACT
+-id INT
+-user_id: INT
+-listing_id: INT
+-email: STR
+-name: STR
+-phone:STR
+-message:TEXT
+-contact_date: DATE
